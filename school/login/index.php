@@ -9,36 +9,15 @@
     <title>Login</title>
 </head>
 
-<body>
-    <style>
-        .main {
-            padding-top: 5%;
-
-
-        }
-
-        h1 {
-            padding-top: 20px;
-        }
-
-        form {
-            padding: 6%;
-            border: 4px solid #999;
-            background-color: #a96f6fcf;
-        }
-
-        body {
-            background-color: beige;
-
-        }
-    </style>
+<body  class="bg-light">
+  
     <center>
-        <h1>LOG IN</h1>
+        <h1 class="p-3">LOG IN</h1>
     </center>
 
-    <div class="d-flex justify-content-center  main">
+    <div class="d-flex justify-content-center p-4">
 
-        <form method="post">
+        <form method="post" class="bg-secondary border border-primary p-5">
             <div class="row mb-4">
                 <label for="inputname" class="col-sm-3 col-form-label">name</label>
                 <div class="col-sm-9">
