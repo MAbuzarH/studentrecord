@@ -2,7 +2,7 @@
 session_start();
 
 // Check if user is not logged in
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+if (!isset($_SESSION['submit']) || $_SESSION['submit'] !== true) {
     // Redirect to login page
     header("Location: http://localhost/school/login/index.php");
     exit;
@@ -22,25 +22,25 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     </head>
 
     <body>
-        <div style="display:flex; ">
-            <div class="nav-bar" style="height: 100vh; flex:10%; text-align: center; width:20%; display: inline-block;">
-                <nav class="nav bg-dark flex-column" style="height: 100vh;">
-                    <p>LMS</p>
-                    <hr style="height:2px; color: aliceblue; ">
+        <div class="d-flex row">
+            <div class="nav-bar text-center col-3 vh-100" >
+                <nav class="nav bg-dark flex-column vh-100" >
+                    <p class="text-primary">LMS</p>
+                    <hr class="h-40 text-primary">
                     <a class="nav-link active" aria-current="page" href="http://localhost/school/dashbord/">DASHBORD</a>
                     <a class="nav-link" href="http://localhost/school/student/index.php">Student</a>
                 </nav>
             </div>
-            <div class="main" style="flex:60%;">
-                <div class="navebar2" style="height:15%">
-                    <nav class="navbar bg-light" style="height:100%">
+            <div class="main col-9">
+                <div class="navebar2" >
+                    <nav class="navbar bg-light" >
                         <div class="container-fluid">
-                            <span class="navbar-brand mb-0 h1">Navbar</span>
+                            <span class="navbar-brand mb-0 p-3">Navbar</span>
                         </div>
-                        <hr style="height:2px; color: aliceblue; ">
+                        <hr class="h-40 text-primary">
                     </nav>
                 </div>
-                <div class="cardsp bg-success p-4 " style="height: 70%;">
+                <div class="cardsp bg-success p-4 h-75" >
                     <div class="card m-2 text-center">
                         <div class="card-body">
                             <h5 class="card-title">Total Student</h5>
@@ -106,7 +106,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                         </div>
                     </div>
                 </div>
-                <div class="bg-light text-center " style="height:10%">
+                <div class="bg-light text-center p-3" >
                     <p>copyright abuzar 2022</p>
                 </div>
             </div>
