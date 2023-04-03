@@ -27,28 +27,28 @@ if (!isset($_SESSION['submit']) || $_SESSION['submit'] !== true) {
 
 
     <body>
-        <div style="display:flex; ">
-            <div class="nav-bar" style="height: 100vh; flex:10%; text-align: center; width:20%; display: inline-block;">
-                <nav class="nav bg-dark flex-column" style="height: 100vh;">
-                    <p>LMS</p>
-                    <hr style="height:2px; color: aliceblue; ">
+        <div class="d-flex row">
+        <div class="nav-bar text-center col-3 vh-100">
+                <nav class="nav bg-dark flex-column vh-100">
+                    <p class="text-primary">LMS</p>
+                    <hr class="h-40 text-primary">
                     <a class="nav-link active" aria-current="page" href="http://localhost/school/dashbord/index.php">DASHBORD</a>
                     <a class="nav-link" href="http://localhost/school/student/index.php">Student</a>
                 </nav>
             </div>
-            <div class="main" style="flex:60%;">
-                <div class="navebar2" style="height:15%">
-                    <nav class="navbar bg-light" style="height:100%">
+            <div class="main col-9" >
+                <div class="navebar2 " >
+                    <nav class="navbar bg-light vh-100" >
                         <div class="container-fluid">
-                            <span class="navbar-brand mb-0 h1">Navbar</span>
+                            <span class="navbar-brand mb-0 p-3">Navbar</span>
                         </div>
-                        <hr style="height:2px; color: aliceblue; ">
+                      <hr class="h-40 text-primary">
                     </nav>
                 </div>
-                <div class="cardsp bg-success p-4 " style="height: 70%;">
-                    <div style="display: flex; justify-content:space-between;" class="p-1">
+                <div class="cardsp bg-success p-4 h-75" >
+                    <div class="p-1 d-flex justify-between ">
                         <p>Admin</p>
-                        <form style="display:flex" method="post">
+                        <form class="d-flex" method="post">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
                             <button class="btn btn-info" type="search">Search</button>
                         </form>
@@ -159,7 +159,7 @@ if (!isset($_SESSION['submit']) || $_SESSION['submit'] !== true) {
                         </div>
 
                 </div>
-                <div class="bg-light text-center " style="height:10%">
+                <div class="bg-light text-center p-3" >
                     <p>copyright abuzar 2022</p>
                 </div>
             </div>
