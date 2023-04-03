@@ -19,21 +19,21 @@
 
         <form method="post" class="bg-secondary border border-primary p-5">
             <div class="row mb-4">
-                <label for="inputname" class="col-sm-3 col-form-label">name</label>
+                <label for="name" class="col-sm-3 col-form-label">name</label>
                 <div class="col-sm-9">
-                    <input type="text" name="name" class="form-control" id="name">
+                    <input type="text" name="name"  id="name">
                 </div>
             </div>
             <div class="row mb-4">
-                <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
                 <div class="col-sm-9">
-                    <input type="email" name="inputemail" class="form-control" id="inputemail">
+                    <input type="email" name="email"  id="email">
                 </div>
             </div>
             <div class="row mb-4">
-                <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                <label for="password" class="col-sm-3 col-form-label">Password</label>
                 <div class="col-sm-9">
-                    <input type="password" name="inputPassword" class="form-control" id="inputPassword">
+                    <input type="password" name="password"  id="password">
                 </div>
             </div>
             <center>
@@ -53,9 +53,9 @@ if (isset($_POST['submit'])) {
 
     // Get form input
     $username = $_POST['name'];
-    $password = $_POST['inputPassword'];
-    $email = $_POST['inputemail'];
-    echo $username, $password, $email;
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+//     echo $username, $password, $email;
     $sql = "SELECT * FROM login WHERE fname='$username' AND email= '$email' AND pasword='$password' ";
     $result = mysqli_query($conn, $sql);
 
